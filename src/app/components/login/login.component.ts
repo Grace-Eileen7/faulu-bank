@@ -1,12 +1,30 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
-  standalone: true,
-  imports: [],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  showNotification: boolean = false;
 
+  constructor(private router: Router) {}
+
+  validateLoginForm() {
+    const username = (<HTMLInputElement>document.getElementById('username')).value;
+    const password = (<HTMLInputElement>document.getElementById('password')).value;
+
+    if (username.trim() === '' || password.trim() === '') {
+      // If any field is empty, show notification
+      this.showNotification = true;
+    } else {
+      // If form is valid, navigate to layout component
+      this.router.navigate(['/layout']);
+    }
+  }
+
+  hideNotification() {
+    this.showNotification = false;
+  }
 }

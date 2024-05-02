@@ -1,49 +1,74 @@
+.bar {
+  background-image: url(../../../assets/Images/Header\ 1.png);
+  height: 20px;
+  width: 100%;
+}
+
 .hero-section {
-    background-image: url( 'assets/images/bg_image.jpg');
-    background-position: center;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-color: blueviolet;
+  background-image: url(../../../assets/Images/bg_image.jpg);
+  background-position: center;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
 
-  }
-  
-  .login-form {
-        background-color: rgba(226, 24, 182, 0.8);
-        padding: 20px;
-        width: 50%;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-        height: 43%;
-    }
-  
-  .login-form p {
-    text-align: top;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  .login-header{
-    display: flex;
-  }
-  .login-header img {
-    height: 60px;
-    width: 60px;
-    margin-top: 33px;
+}
+.container{
+  width: 60%;
+  margin-left: 40px;
+}
+.top-logo img {
+  height: 140px;
+  width: 234px;
+  margin-left: 40px;
+  background-color: #f0f8ffbd;
+  margin-left: 55px;
+  margin-bottom: 27px;
+  border-radius: 10px;
 
-  }
-  /*.form-container{}*/
-  .section-login{
-    background-color: aqua;
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-  }
- 
-  .section2-login{
-    margin-top: 50px;
-    background-color: rgb(52, 40, 94);
-    width: 50%;
-    display: flex;
-  }
+}
+
+.login-form {
+
+
+  background-color: rgb(44 0 73 / 80%);
+  padding: 20px;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  height: 43%;
+}
+
+.login-form p {
+  text-align: top;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.login-header {
+  display: flex;
+}
+
+.login-header img {
+  height: 60px;
+  width: 60px;
+  margin-top: 33px;
+
+}
+
+/*.form-container{}*/
+.section-login {
+  background-color: #dee2e6a6;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section2-login {
+  margin-top: 50px;
+  background-color: #dee2e6a6;
+  width: 50%;
+  display: flex;
+}

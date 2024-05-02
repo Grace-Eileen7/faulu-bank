@@ -5,20 +5,18 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 export const routes: Routes = [
     {
-        path: '', redirectTo: '', pathMatch:'full'
+        path: '', redirectTo: 'login', pathMatch:'full'
     },
     {
         path:'login',
         component:LoginComponent
     },
     {
-        path:'',
-        component:LayoutComponent,
-        children:[
-            {
-               path:'dashboard',
-               component: DashboardComponent 
-            }
-        ]
+        path:'layout',
+        component:LayoutComponent
+    },    
+    {
+        path:'dashboard',
+        component: DashboardComponent 
     }
 ];
