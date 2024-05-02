@@ -1,79 +1,53 @@
-<header>
-    <nav class="navbar">
-        <span class="hamburger-btn material-symbols-rounded">menu</span>
-        <a href="#" class="logo">
-            <img src="images/logo.jpg" alt="logo">
-            <h2>Registration</h2>
-        </a>
-        <ul class="links" [class.show-menu]="isMenuOpen">
-            <span class="close-btn material-symbols-rounded" (click)="toggleMenu()">close</span>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Account</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact us</a></li>
-        </ul>
-        <button class="login-btn" (click)="togglePopup()">LOG IN</button>
-    </nav>
-</header>
+<div class="bar"></div>
 
-<div class="blur-bg-overlay" *ngIf="isPopupOpen" (click)="togglePopup()"></div>
-<div class="form-popup" [class.show-popup]="isPopupOpen">
-    <span class="close-btn material-symbols-rounded" (click)="togglePopup()">close</span>
-    <div class="form-box login">
-        <div class="form-details">
-            <h2>Welcome Back</h2>
-            <p>Please log in using your personal information to stay connected with us.</p>
-        </div>
-        <div class="form-content">
-            <h2>LOGIN</h2>
-            <form action="#">
-                <div class="input-field">
-                    <input type="text" required>
-                    <label>Email</label>
+<div class="hero-section">
+    <div class="top-logo">
+        <img src="../../../assets/Images/Vector.png" alt="">
+    </div>
+    <div class="container">
+        <div class="login-form">
+            <div class="login-header">
+                <p>welcome to</p> <br>
+                <img src="../../../assets/Images/Vector.png" alt="">
+            </div>
+            <form>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username"/>
                 </div>
-                <div class="input-field">
-                    <input type="password" required>
-                    <label>Password</label>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" />
                 </div>
-                <a href="#" class="forgot-pass-link">Forgot password?</a>
-                <button type="submit">Log In</button>
+                <button type="button" class="btn btn-primary" (click)="validateLoginForm()">LOGIN</button>
+                <div>
+                    <p>Forgot your <a href="#">Password?</a> </p>
+                </div>
             </form>
-            <div class="bottom-link">
-                Don't have an account?
-                <a href="#" id="signup-link">Signup</a>
+        </div>
+        <div class="section-login">
+            <div class="register-btn">
+                <p>Not registered to <br> internet Banking?.</p>
+                <button type="submit" class="btn btn-primary">REGISTER NOW</button>
+            </div>
+            <div class="open-btn">
+                <p>Not a member of Faulu <br> Microfinance Bank?</p>
+                <button type="submit" class="btn btn-primary">LOPEN ACCOUNT</button>
+            </div>
+        </div>
+        <div class="section2-login">
+            <div class="register-paragraph">
+                <p>Verify that Bootstrap styles are being applied correctly to your components and that there are no errors in the browser console.</p>
+                <div class="register-btn">
+                    <button type="submit" class="btn btn-primary">APPLY BID BOND</button>
+                </div>
             </div>
         </div>
     </div>
-    <div class="form-box signup">
-        <div class="form-details">
-            <h2>Create Account</h2>
-            <p>To become a part of our community, please sign up using your personal information.</p>
-        </div>
-        <div class="form-content">
-            <h2>SIGNUP</h2>
-            <form action="#">
-                <div class="input-field">
-                    <input type="text" required>
-                    <label>Enter your email</label>
-                </div>
-                <div class="input-field">
-                    <input type="password" required>
-                    <label>Create password</label>
-                </div>
-                <div class="policy-text">
-                    <input type="checkbox" id="policy">
-                    <label for="policy">
-                        I agree the
-                        <a href="#" class="option">Terms & Conditions</a>
-                    </label>
-                </div>
-                <button type="submit">Sign Up</button>
-            </form>
-            <div class="bottom-link">
-                Already have an account? 
-                <a href="#" id="login-link">Login</a>
-            </div>
-        </div>
+</div>
+
+<!-- Notification Popup -->
+<div class="notification-popup" *ngIf="showNotification">
+    <div class="notification-content">
+        <p>Please fill in all the fields.</p>
+        <button type="button" (click)="hideNotification()">Close</button>
     </div>
 </div>
