@@ -24,14 +24,14 @@
   background-color: #f0f8ffbd;
   margin-left: 55px;
   margin-bottom: 27px;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
 
 }
 
 .login-form {
 
 
-  background-color: rgb(44 0 73 / 80%);
+  background-color: rgba(107, 41, 151, 0.8);
   padding: 20px;
   width: 50%;
   border-radius: 10px;

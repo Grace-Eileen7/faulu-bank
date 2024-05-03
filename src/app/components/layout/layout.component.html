@@ -1,53 +1,54 @@
-<div class="bar"></div>
-
-<div class="hero-section">
-    <div class="top-logo">
-        <img src="../../../assets/Images/Vector.png" alt="">
-    </div>
-    <div class="container">
-        <div class="login-form">
-            <div class="login-header">
-                <p>welcome to</p> <br>
-                <img src="../../../assets/Images/Vector.png" alt="">
-            </div>
-            <form>
-                <div class="form-group">
-                    <input type="text" id="username" placeholder="Username"/>
-                </div>
-                <div class="form-group">
-                    <input type="password" id="password" placeholder="Password" />
-                </div>
-                <button type="button" class="btn btn-primary" (click)="validateLoginForm()">LOGIN</button>
-                <div>
-                    <p>Forgot your <a href="#">Password?</a> </p>
-                </div>
-            </form>
-        </div>
-        <div class="section-login">
-            <div class="register-btn">
-                <p>Not registered to <br> internet Banking?.</p>
-                <button type="submit" class="btn btn-primary">REGISTER NOW</button>
-            </div>
-            <div class="open-btn">
-                <p>Not a member of Faulu <br> Microfinance Bank?</p>
-                <button type="submit" class="btn btn-primary">LOPEN ACCOUNT</button>
-            </div>
-        </div>
-        <div class="section2-login">
-            <div class="register-paragraph">
-                <p>Verify that Bootstrap styles are being applied correctly to your components and that there are no errors in the browser console.</p>
-                <div class="register-btn">
-                    <button type="submit" class="btn btn-primary">APPLY BID BOND</button>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="nav_bar">
+</div>
+<div class="logos-container">
+    <img src="../../../assets/Images/ebanking 1.png" alt="Left Logo" class="left-logo">
+    <img src="../../../assets/Images/Vector.png" alt="Right Logo" class="right-logo">
 </div>
 
-<!-- Notification Popup -->
-<div class="notification-popup" *ngIf="showNotification">
-    <div class="notification-content">
-        <p>Please fill in all the fields.</p>
-        <button type="button" (click)="hideNotification()">Close</button>
+
+<div class="headers">
+    <h2>Great, Let's keep going | Before we register you for online banking, we would like to verify your account.</h2>
+</div>
+<div class=" Main-container">
+<div class="left-box">
+    <ol start ="01">
+        <li>ACCOUNT</li>
+        <lI>ACOOUNT DETAILS</lI>
+        <li>LIMIT SETTING</li>
+        <li>CONFIRMATION</li>
+    </ol>
+</div>
+<div class="right-box">
+    <h1>Let's get started with the registartion. Please provide the below <br> details: </h1>
+    <form action="/submit_registration" method="post">
+        <label for="acct_number">Enter Account Number:</label><br>
+        <input type="text" id="acct_number" name="acct_number" required><br><br>
+      
+        <label for="phone_number">Phone Number:</label><br>
+        <input type="tel" id="phone_number" name="phone_number" required><br><br>
+      
+        <label for="id_type">Select ID Type:</label><br>
+        <select id="id_type" name="id_type" required>
+          <option value="passport">Passport</option>
+          <option value="driver_license">Driver's License</option>
+          <option value="national_id">National ID Card</option>
+        </select><br><br>
+      
+        <label for="id_number">Enter Your ID:</label><br>
+        <input type="text" id="id_number" name="id_number" required><br><br>
+      
+        <button type="button" onclick="cancel()">Cancel</button>
+        <button type="submit">Continue</button>
+      </form>
+</div>
+</div>
+<div class="footer">
+    <div class="row">
+        <p>Copyright© Faulu Microfinance Bank Limited 2024
+    <div class="row">
+        <p>Nedd help? Talk to us via info&#64;faulukenya.com | Call +254 711 07400 Twitter Facebook Instagram WhatsApp</p>
+    </div>
+    <div class="row">
+        <p><a href="#">Security | Privacy policy |Terms & Conditions</a>.</p>
     </div>
 </div>
