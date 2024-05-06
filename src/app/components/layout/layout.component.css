@@ -53,6 +53,8 @@
     width: 204px;
 }
 
-.right-box {
-    
+.bottom{
+    background-color: black;
+    justify-content: space-between;
+    position: fixed;
 }

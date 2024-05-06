@@ -14,14 +14,15 @@
 
 }
 .container{
-  width: 60%;
+  width: 41%;
+  height: 30px;
   margin-left: 40px;
 }
 .top-logo img {
-  height: 140px;
-  width: 234px;
-  margin-left: 40px;
-  background-color: #f0f8ffbd;
+  height: 88px;
+  width: 156px;
+  margin-left: 35px;
+  background-color: #e9ecef;
   margin-left: 55px;
   margin-bottom: 27px;
   border-radius: 0px 0px 10px 10px;
@@ -29,33 +30,53 @@
 }
 
 .login-form {
-
-
   background-color: rgba(107, 41, 151, 0.8);
-  padding: 20px;
+  padding: 10px 15px;
   width: 50%;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  height: 43%;
 }
 
-.login-form p {
-  text-align: top;
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 7px;
+  margin: 13px 0px 0px 0px;
 }
 
-.form-group {
-  margin-bottom: 20px;
+.input-box input::placeholder {
+  color: black;
+  font-size: small;
 }
-
-.login-header {
+.login-header{
   display: flex;
+  align-items: center;
 }
 
+.login-header p{
+  color: #fff;
+  margin-bottom: 0px;
+}
 .login-header img {
   height: 60px;
-  width: 60px;
-  margin-top: 33px;
+  width: 180px;
+  margin-left: 48px;
+}
 
+.para-2{
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+  color: #fff;
+
+}
+
+.login-form p a {
+  color: orange; /* Setting link color to orange */
+  text-decoration: none; 
 }
 
 /*.form-container{}*/
@@ -64,6 +85,12 @@
   width: 50%;
   display: flex;
   justify-content: space-between;
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px 15px 10px 15px;
+}
+
+.register-btn{
+  font-size: small;
 }
 
 .section2-login {
@@ -71,4 +98,53 @@
   background-color: #dee2e6a6;
   width: 50%;
   display: flex;
+  border-radius: 10px;
+  padding: 10px 25px;
+}
+
+.register-paragraph{
+  font-size: smaller;
+}
+.open-btn{
+  font-size: small;
+}
+/* Targeting the primary login button */
+.btn.btn-primary {
+  background-color: #f38f18;
+  color: white; /* Adding white text color for better visibility */
+  width: 100%;
+  height: 100%;
+  font-size: smaller;
+  font-weight: bold;
+  padding: 9px;
+  margin-top: 13px;
+  margin-bottom: 10px;
+}
+
+/* Targeting the register now button */
+.btn.btn-primary1 {
+  background-color: #f38f18;
+  color: white; /* Adding white text color for better visibility */
+  width: 100px;
+  font-size: smaller;
+  font-weight: bold;
+  padding: 5px;
+}
+
+/* Targeting the open account button */
+.btn.btn-primary2 {
+  background-color: #f38f18;
+  color: white; /* Adding white text color for better visibility */
+  width: 100px;
+  font-size: smaller;
+  font-weight: bold;
+  padding: 5px;
+}
+
+/* Targeting the apply bid bond button */
+.btn.btn-primary3 {
+  background-color: #f38f18;
+  color: white; /* Adding white text color for better visibility */
+  font-weight: bold;
+  font-size: small;
 }
