@@ -53,8 +53,10 @@
     width: 204px;
 }
 
-.bottom{
-    background-color: black;
+.bottom footer{
+    background-color:bisque;
     justify-content: space-between;
     position: fixed;
+    display: flex;
+    height: 40px;
 }

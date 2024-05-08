@@ -7,17 +7,19 @@
 .hero-section {
   background-image: url(../../../assets/Images/bg_image.jpg);
   background-position: center;
-  height: 100vh;
+  height: 92vh;
   justify-content: center;
   align-items: center;
   background-color: rgba(77, 13, 119, 0.8);
-
+  overflow: hidden;
 }
-.container{
+
+.container {
   width: 41%;
   height: 30px;
   margin-left: 40px;
 }
+
 .top-logo img {
   height: 67px;
   width: 126px;
@@ -51,15 +53,17 @@
   color: black;
   font-size: small;
 }
-.login-header{
+
+.login-header {
   display: block;
   align-items: center;
 }
 
-.login-header p{
+.login-header p {
   color: #fff;
   margin-bottom: 0px;
 }
+
 .login-header img {
   height: 60px;
   width: 180px;
@@ -67,7 +71,7 @@
   margin-top: -14px;
 }
 
-.para-2{
+.para-2 {
   display: flex;
   justify-content: space-between;
   font-size: 10px;
@@ -76,8 +80,9 @@
 }
 
 .login-form p a {
-  color: orange; /* Setting link color to orange */
-  text-decoration: none; 
+  color: orange;
+  /* Setting link color to orange */
+  text-decoration: none;
 }
 
 /*.form-container{}*/
@@ -90,12 +95,12 @@
   padding: 10px 15px 10px 15px;
 }
 
-.register-btn{
+.register-btn {
   font-size: x-small;
   font-weight: 400;
 }
 
-.open-btn{
+.open-btn {
   font-size: x-small;
   font-weight: 400;
 }
@@ -104,7 +109,7 @@
   margin-bottom: 3px;
 }
 
-.open-btn p{
+.open-btn p {
   margin-bottom: 3px;
 }
 
@@ -119,7 +124,7 @@
   height: 65px;
 }
 
-.register-paragraph{
+.register-paragraph {
   font-size: x-small;
 }
 
@@ -127,7 +132,8 @@
 /* Targeting the primary login button */
 .btn.btn-primary {
   background-color: #f38f18;
-  color: white; /* Adding white text color for better visibility */
+  color: white;
+  /* Adding white text color for better visibility */
   width: 100%;
   height: 100%;
   font-size: smaller;
@@ -140,7 +146,8 @@
 /* Targeting the register now button */
 .btn.btn-primary1 {
   background-color: #f38f18;
-  color: white; /* Adding white text color for better visibility */
+  color: white;
+  /* Adding white text color for better visibility */
   width: 80px;
   font-size: smaller;
   font-weight: 500;
@@ -150,7 +157,8 @@
 /* Targeting the open account button */
 .btn.btn-primary2 {
   background-color: #f38f18;
-  color: white; /* Adding white text color for better visibility */
+  color: white;
+  /* Adding white text color for better visibility */
   width: 80px;
   font-size: smaller;
   font-weight: 500;
@@ -160,10 +168,64 @@
 /* Targeting the apply bid bond button */
 .btn.btn-primary3 {
   background-color: #f38f18;
-  color: white; /* Adding white text color for better visibility */
+  color: white;
+  /* Adding white text color for better visibility */
   font-weight: 500;
   font-size: smaller;
   width: 85px;
   height: 40px;
   padding: 6px 19px;
+}
+
+.bottom footer {
+  background-color: bisque;
+  justify-content: space-between;
+  display: flex;
+  height: 20px;
+  width: 100%;
+}
+
+.row p {
+  font-size: x-small;
+
+}
+
+/* CSS for phones */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%; /* Adjust as needed */
+    margin-left: 0; /* Reset margin */
+  }
+  
+  .top-logo img {
+    margin-left: 0; /* Reset margin */
+  }
+  
+  .login-form {
+    width: 80%; /* Adjust as needed */
+  }
+  
+  .section-login,
+  .section2-login {
+
+      width: 81%;
+      height: 103px;
+  }
+}    /* Adjust as needed */
+  
+
+/* CSS for tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    width: 70%; /* Adjust as needed */
+  }
+  
+  .login-form {
+    width: 60%; /* Adjust as needed */
+  }
+}
+
+/* CSS for laptops and desktops */
+@media only screen and (min-width: 1025px) {
+  /* Your existing CSS for laptops and desktops */
 }
