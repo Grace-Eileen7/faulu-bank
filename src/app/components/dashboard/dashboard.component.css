@@ -1,0 +1,60 @@
+.nav_bar{
+    background-image: url(../../../assets/Images/Header\ 1.png);
+    height: 20px;
+    width: 100%;
+}
+.logos-container {
+    position: relative;
+    margin-bottom: 25px;
+    height: 20px;
+}
+
+.left-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.right-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 40px;
+}
+
+.left-logo,
+.right-logo {
+    width: 90px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.headers {
+    background-color: rgba(107, 41, 151, 0.8);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.Main-container {
+    display: flex;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 60px;
+    margin-top: 0px;
+    justify-content: space-between;
+}
+
+.left-box {
+    border-width: 2px ;
+    border-style: dashed;
+    border-color: rgba(107, 41, 151, 0.8);
+    margin-bottom: 20px;
+    padding: 10px 10px 15px;
+    height: fit-content;
+    width: 204px;
+}
+
+.bottom{
+    background-color: black;
+    justify-content: space-between;
+    position: fixed;
+}
