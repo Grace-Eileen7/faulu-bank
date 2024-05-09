@@ -3,6 +3,14 @@
     height: 20px;
     width: 100%;
 }
+
+.main-section2{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    scrollbar-width: none;
+  }
+  
 .logos-container {
     position: relative;
     margin-bottom: 25px;
@@ -13,6 +21,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    color: #573478;
 }
 
 .right-logo {
@@ -22,41 +31,112 @@
     margin-right: 40px;
 }
 
+.banner{
+    background-color: #573478;
+    height: 50px;
+    padding: 12px;
+    font-size: large;
+    font-weight: 500;
+    color:white;
+    margin-bottom: 5px;
+ }
+
+.banner a {
+    color: orange; /* Set the color to yellow */
+}
 .left-logo,
 .right-logo {
     width: 90px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
 }
 
-.headers {
-    background-color: rgba(107, 41, 151, 0.8);
+ .card{
+    margin: 10px 15px 5px 15px;
+    box-shadow: 2px;
+    padding: 15px;
+}
+
+.subtitle{
+    display: block;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+}
+
+.sms ,
+.security {
+    display: flex;
+}
+
+.separator{
+    font-weight: 500;
+}
+.sms img{
+    height: 66px;
+    margin: 0px 30px 0px 0px;
+}
+.security img{
+    height: 66px;
+    margin: 4px 30px 0px 0px;
+}
+
+.section-2 h2{
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 7px;
+}
+
+.section-2 p{
+    margin-bottom: 15px;
+}
+
+.section-3 h2{
+    font-weight: bold;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    margin-bottom: 7px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
     padding: 10px;
-    margin-bottom: 20px;
+    margin: 0px 5px 5px 5px;
+
 }
 
-.Main-container {
-    display: flex;
-    margin-right: 30px;
-    margin-left: 30px;
-    margin-bottom: 60px;
-    margin-top: 0px;
+.btn-primary{
+    color: orange;
+    border-color: orange;
+    background-color: white;
+    width: 127px;
+    
+}
+
+.btn-primary:last-child {
+    color: white;
+    border-color: orange;
+    background-color: orange;
+    width: 127px;
+}
+
+.cancel-btn{
+    color: rgb(77, 64, 42);
+    background-color: blueviolet;
+    width: 90px;
+}
+.bottom footer {
+    background-color: #e9ecef;
     justify-content: space-between;
-}
-
-.left-box {
-    border-width: 2px ;
-    border-style: dashed;
-    border-color: rgba(107, 41, 151, 0.8);
-    margin-bottom: 20px;
-    padding: 10px 10px 15px;
-    height: fit-content;
-    width: 204px;
-}
-
-.bottom footer{
-    background-color:bisque;
-    justify-content: space-between;
-    position: fixed;
     display: flex;
-    height: 40px;
-}
+    height: 24px;
+    width: 100%;
+    padding: 5px;
+    margin-top: 228px;
+
+  }

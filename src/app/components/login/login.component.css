@@ -1,13 +1,23 @@
+.main-section {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  scrollbar-width: none;
+}
+
 .bar {
   background-image: url(../../../assets/Images/Header\ 1.png);
   height: 20px;
   width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .hero-section {
   background-image: url(../../../assets/Images/bg_image.jpg);
   background-position: center;
-  height: 92vh;
+  height: 94vh;
   justify-content: center;
   align-items: center;
   background-color: rgba(77, 13, 119, 0.8);
@@ -178,50 +188,58 @@
 }
 
 .bottom footer {
-  background-color: bisque;
+  background-color: #e9ecef;
   justify-content: space-between;
   display: flex;
-  height: 20px;
+  height: 24px;
   width: 100%;
+  padding: 5px;
 }
 
 .row p {
   font-size: x-small;
-
 }
 
 /* CSS for phones */
 @media only screen and (max-width: 600px) {
   .container {
-    width: 90%; /* Adjust as needed */
-    margin-left: 0; /* Reset margin */
+    width: 90%;
+    /* Adjust as needed */
+    margin-left: 0;
+    /* Reset margin */
   }
-  
+
   .top-logo img {
-    margin-left: 0; /* Reset margin */
+    margin-left: 0;
+    /* Reset margin */
   }
-  
+
   .login-form {
-    width: 80%; /* Adjust as needed */
+    width: 80%;
+    /* Adjust as needed */
   }
-  
+
   .section-login,
   .section2-login {
 
-      width: 81%;
-      height: 103px;
+    width: 81%;
+    height: 103px;
   }
-}    /* Adjust as needed */
-  
+}
+
+/* Adjust as needed */
+
 
 /* CSS for tablets */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .container {
-    width: 70%; /* Adjust as needed */
+    width: 70%;
+    /* Adjust as needed */
   }
-  
+
   .login-form {
-    width: 60%; /* Adjust as needed */
+    width: 60%;
+    /* Adjust as needed */
   }
 }
 
