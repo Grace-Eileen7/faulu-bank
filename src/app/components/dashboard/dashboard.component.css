@@ -11,8 +11,9 @@
 
 .left-logo {
     position: absolute;
-    top: 0;
-    left: 0;
+    margin-left: 65px;
+    background-color: purple;
+    padding: 5px;
 }
 
 .right-logo {
@@ -32,29 +33,104 @@
     background-color: rgba(107, 41, 151, 0.8);
     padding: 10px;
     margin-bottom: 20px;
+    padding-left: 38px;
 }
 
-.Main-container {
-    display: flex;
-    margin-right: 30px;
-    margin-left: 30px;
-    margin-bottom: 60px;
-    margin-top: 0px;
-    justify-content: space-between;
+.orange-link {
+  color: orange;
+  text-decoration: none; /* Remove underline from the link */
 }
 
+.pagination-box {
+  width: 113%;
+  height: 15%;
+  display: inline-block;
+  padding: 7px 175px 5px 0px; /* Adjust padding as needed */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  background-color: rgba(107, 41, 151, 0.8); /* Background color */
+  color: orange; /* Text color */
+  font-size: 14px; /* Font size */
+  cursor: pointer; /* Show pointer cursor on hover */
+  text-align: center; /* Center align text */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.pagination-box:hover {
+  background-color: #e0e0e0; /* Change background color on hover */
+}
+
+.page {
+  border: 2px dashed rgba(107, 41, 151, 0.8);
+  width: 229px;
+  height: 160px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+li {
+  padding: 5px;
+}
 .left-box {
-    border-width: 2px ;
-    border-style: dashed;
-    border-color: rgba(107, 41, 151, 0.8);
-    margin-bottom: 20px;
-    padding: 10px 10px 15px;
-    height: fit-content;
-    width: 204px;
+  width: 200px;
 }
 
-.bottom{
-    background-color: black;
-    justify-content: space-between;
-    position: fixed;
+.right-box {
+  width: 35%;
+  margin-bottom: 60px;
+}
+
+.Main-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+
+.identification {
+  display: flex;
+  justify-content: space-between;
+}
+
+.identification1 {
+  width: 45%;
+}
+
+.identification2 {
+  width: 45%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;/* Align items to the left and right */
+}
+
+.left-btn {
+  color: orange;
+  border-color: orange;
+  background-color: white; /* Change the order of the button to 1 (left) */
+}
+
+.right-btn {
+  color: white;
+  border-color: orange;
+  background-color: orange; /* Change the order of the button to 2 (right) */
+}
+
+
+.bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 32px;
+  padding: 10px;
+  background-color: transparent;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 400;
+  font-size: medium;
+  justify-content: space-between;
 }

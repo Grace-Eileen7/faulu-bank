@@ -5,54 +5,53 @@
     <img src="../../../assets/Images/Vector.png" alt="Right Logo" class="right-logo">
 </div>
 
-
 <div class="headers">
-    <h2>Great, Let's keep going | Before we register you for online banking, we would like to verify your account.</h2>
-</div>
+    <h2><a href="#" class="orange-link">Great, Let's keep going |</a> Before we register you for online banking, we would like to verify your account.</h2>
+  </div>
+  
+
 <div class=" Main-container">
 <div class="left-box">
-    <ol start ="01">
-        <li>ACCOUNT</li>
-        <lI>ACOOUNT DETAILS</lI>
-        <li>LIMIT SETTING</li>
-        <li>CONFIRMATION</li>
-    </ol>
-</div>
-<div class="right-box">
-    <h1>Let's get started with the registartion. Please provide the below <br> details: </h1>
-    <form action="/submit_registration" method="post">
-        <label for="acct_number">Enter Account Number:</label><br>
-        <input type="text" id="acct_number" name="acct_number" required><br><br>
+    <div class="pagination-box">
+        01/04
+      </div>
       
-        <label for="phone_number">Phone Number:</label><br>
-        <input type="tel" id="phone_number" name="phone_number" required><br><br>
-      
-        <label for="id_type">Select ID Type:</label><br>
-        <select id="id_type" name="id_type" required>
-          <option value="passport">Passport</option>
-          <option value="driver_license">Driver's License</option>
-          <option value="national_id">National ID Card</option>
-        </select><br><br>
-      
-        <label for="id_number">Enter Your ID:</label><br>
-        <input type="text" id="id_number" name="id_number" required><br><br>
-      
-        <button type="button" onclick="cancel()">Cancel</button>
-        <button type="submit">Continue</button>
-      </form>
-</div>
-</div>
-<div class="bottom">
-    <footer>
-        <div class="row">
-            <p>Copyright© Faulu Microfinance Bank Limited 2024</p>
-        </div>
-        <div class="row">
-            <p>Need help? Talk to us via info&#64;faulukenya.com | Call +254 711 07400 Twitter Facebook Instagram WhatsApp</p>
-        </div>
-        <div class="row">
-            <p><a href="#">Security | Privacy policy | Terms & Conditions</a>.</p>
-        </div>
-    </footer>
+    <ul class ="page">
+        <li>01. ACCOUNT CHECK</li>
+        <lI>02. ACOOUNT DETAILS</lI>
+        <li>03. LIMIT SETTING</li>
+        <li>04. CONFIRMATION</li>
+    </ul>
 </div>
 
+<div class="right-box">
+        <label for="accountNumber" class="form-label">Enter your Account Number</label>
+        <input type="text" class="form-control" id="accountNumber" placeholder="">
+
+        <label for="phoneNumber" class="form-label">Enter your Phone Number</label>
+        <input type="text" class="form-control" id="phoneNumber" placeholder="">
+
+    <div class="identification">
+        <div class="identification1">
+        <label for="identificationNumberType" class="form-label">Select ID type</label>
+        <input type="text" class="form-control" id="identificationNumberType" placeholder="">
+        </div>
+
+        <div class="identification2">
+        <label for="identificationNumber" class="form-label">Enter your ID Number</label>
+        <input type="text" class="form-control" id="identificationNumber" placeholder="">
+        </div>
+    </div>
+    <div class="button-container">
+        <button class="btn btn-primary left-btn">CANCEL</button>
+        <button class="btn btn-primary right-btn">CONTINUE</button>
+    </div>
+    </div>
+</div>
+
+
+<div class="bottom">
+            <p>Copyright© Faulu Microfinance Bank Limited 2024</p>
+            <p>Need help? Talk to us via info&#64;faulukenya.com | Call +254 711 07400 Twitter Facebook Instagram WhatsApp</p>
+            <p><a href="#">Security | Privacy policy | Terms & Conditions</a>.</p>
+</div>
