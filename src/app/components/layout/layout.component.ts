@@ -7,24 +7,22 @@ import { Router } from '@angular/router';
   styleUrls: ['./layout.component.css']
 })
 export class LayoutComponent {
-  showNotification: boolean = false;
 
   constructor(private router: Router) {}
 
-  validateLoginForm() {
-    const username = (<HTMLInputElement>document.getElementById('username')).value;
-    const password = (<HTMLInputElement>document.getElementById('password')).value;
-
-    if (username.trim() === '' || password.trim() === '') {
-      // If any field is empty, show notification
-      this.showNotification = true;
-    } else {
-      // If form is valid, navigate to layout component
-      this.router.navigate(['/dashboard']);
-    }
+  // Function to navigate to dashboard component
+  navigateToDashboard() {
+    this.router.navigate(['/dashboard']);
   }
 
-  hideNotification() {
-    this.showNotification = false;
+  // Function to handle accept button click
+  accept() {
+    // You can perform any necessary logic here before navigating
+    this.navigateToDashboard();
+  }
+
+  // Function to handle cancel button click
+  cancel() {
+    // Navigate to a different page or perform any other action
   }
 }
