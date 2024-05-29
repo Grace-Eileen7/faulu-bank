@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select ID Type</title>
+    <!-- Add Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!--Account Check -->
+    <div class="nav_bar">
+    </div>
+    <div class="logos-container">
+        <img src="../../../assets/Images/ebanking 1.png" alt="Left Logo" class="left-logo">
+        <img src="../../../assets/Images/Vector.png" alt="Right Logo" class="right-logo">
+    </div>
+    <div class="headers">
+        <h2><a href="#" class="orange-link">Great, Let's keep going |</a> Before we register you for online banking, we
+            would like to verify your account.</h2>
+    </div>
+    <div class="Main-container active" id="page1">
+        <div class="left-box">
+            <div class="pagination-box">
+                01/04
+            </div>
+
+            <ul class="page">
+                <li onclick="showPage(1)">01. ACCOUNT CHECK</li>
+                <li onclick="showPage(2)">02. ACCOUNT DETAILS</li>
+                <li onclick="showPage(3)">03. LIMIT SETTING</li>
+                <li onclick="showPage(4)">04. CONFIRMATION</li>
+            </ul>
+        </div>
+
+
+        <div class="Acount-Check">
+            <label for="accountNumber" class="form-label"></label>
+            <input type="text" class="form-control" id="accountNumber" placeholder="Enter your Account Number">
+
+            <label for="phoneNumber" class="form-label"></label>
+            <input type="text" class="form-control" id="phoneNumber" placeholder="Enter your Phone Number">
+
+            <div class="identification">
+
+                <div class="identification1">
+                    <label for="selectIdentityType" class="form-label"></label>
+                    <select class="form-control" id="identificationNumberType" placeholder="Select Identity Type">
+                        <i class="fa fa-caret-down"></i>
+
+                        <option value="passport">Select Identity Type</option>
+                        <option value="passport">Passport</option>
+                        <option value="national-id">National ID</option>
+                        <option value="driver-license">Driver's License</option>
+                    </select>
+                </div>
+
+
+                <div class="identification2">
+                    <label for="IDNumber" class="form-label"></label>
+                    <input type="number" class="form-control" id="IDNumber" placeholder="Identity Number">
+                </div>
+
+                <div class="button-container">
+                    <button class="btn btn-primary right-btn">CONTINUE</button>
+                </div>
+            </div>
+        </div>
+
+        <br>
+       
+    </div>
+
+    <div class="Account-Details">
+        <div class ="Acct-h2">
+            <h2>By continuing, you confirm that the<br>personal information provided is correct</h2>
+        </div>
+        <div class=" Acct-Detail">
+            <label for="accountNumber" class="form-label">Account Number</label>
+            <input type="number" class="form-control" id="accountNumber" placeholder="Account Number">
+
+            <label for="accountName" class="form-label">Account Name</label>
+            <input type="text" class="form-control" id="accountName" placeholder="Account Name">
+        </div>
+
+        <div class="user-info">
+            <label for="emailAddress" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="emailAddress" placeholder="Email Address">
+
+            <label for="idType" class="form-label">ID Type</label>
+            <input type="text" class="form-control" id="idType" placeholder="ID Type">
+
+            <label for="id/PassportNumber" class="form-label">ID/Passport No.</label>
+            <input type="number" class="form-control" id="id/PassportNumber" placeholder="ID/Passport No">
+        </div>
+
+        <div class="KRA-info">
+            <label for="KRA" class="form-label">KRA PIN</label>
+            <input type="text" class="form-control" id="KRAPin" placeholder="KRA PIN">
+
+            <label for="confirmKraPin" class="form-label">Confirm KRA PIN</label>
+            <input type="text" class="form-control" id="confirmKraPin" placeholder="Confirm KRA PIN">
+        </div>
+
+
+        <div class="button2-container">
+            <button class="btn btn-primary left-btn">CONTINUE</button>
+        </div>
+    </div>
+
+    <div class="Limit-Settings">
+        <label for="perTransactionLimit" class="form-label"></label>
+        <input type="number" class="form-control" id="perTransactionLimit" placeholder="Per transaction limit">
+
+        <label for="dailyTransactionLimit" class="form-label"></label>
+        <input type="number" class="form-control" id="dailyTransactionLimit" placeholder="Daily transaction limit">
+
+        <div class="button-container">
+            <button class="btn btn-primary right-btn">CONTINUE</button>
+        </div>
+    </div>
+    
+    
+
+<div class="footer">
+        <p>Copyright© Faulu Microfinance Bank Limited 2024</p>
+        <p>Need help? Talk to us via info&#64;faulukenya.com | Call +254 711 07400 Twitter Facebook Instagram WhatsApp
+        </p>
+        <p><a href="#">Security | Privacy policy | Terms & Conditions</a>.</p>
+    </div>    
+
+
+
+    <!-- Add Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

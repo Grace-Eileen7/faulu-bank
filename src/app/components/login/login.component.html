@@ -1,114 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
-</head>
-<body>
-    <div class="main-section">
-        <div class="bar">
-            <a href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-        </div>
+<div class="main-section">
+  <div class="bar">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+  </div>
+  
+  <div class="hero-section">
+      <div class="top-logo">
+          <img src="../../../assets/Images/Vector.png" alt="">
+      </div>
+      <div class="container">
+          <div class="login-form">
+              <div class="login-header">
+                  <p>Welcome to</p> <br>
+                  <img src="../../../assets/Images/ebanking 1.png" alt="">
+              </div>
+          <div class="input">
+              <form>
+                  <div class="input-box">
+                  <input type="username" placeholder="Username" required>
+                  </div>
+                  <div class="input-box">
+                  <input type="password" placeholder="Password" required>
+                  </div>
+                  <div>
+                  <button type="submit" class="btn btn-primary" (click)="navigateToRegistration()" >LOGIN</button>
+                  </div>
+                  <div class="para-2">
+                      <p>Security Tips </p>
+                      <p>Forgot your <a href="#">Password?</a> </p>
+                  </div>
+              </form>
+          </div>
+              
+          </div>
+          <div class="section-login">
+            <div class="register-btn">
+              <p>Not registered to <br> internet Banking?</p>
+              <button type="button" class="btn btn-primary1" (click)="navigateToTermsAndconditions()">REGISTER NOW</button>
+          </div>
+          <div class="open-btn">
+              <p>Not a member of Faulu <br> Microfinance Bank?</p>
+              <button type="button" class="btn btn-primary2" (click)="navigateToRegistration()">OPEN ACCOUNT</button>
+          </div>
+          
 
-        <div class="hero-section">
-            <div class="top-logo">
-                <img src="../../../assets/Images/Vector.png" alt="">
-            </div>
-            <div class="container">
-                <div class="login-form">
-                    <div class="login-header">
-                        <p>Welcome to</p> <br>
-                        <img src="../../../assets/Images/ebanking 1.png" alt="">
-                    </div>
-                    <div class="input">
-                        <form id="login-form" (submit)="validateLoginForm()">
-                            <div class="input-box">
-                                <input id="email" type="email" placeholder="Email" required>
-                            </div>
-                            <div class="input-box">
-                                <input id="password" type="password" placeholder="Password" required>
-                            </div>
-                            <div>
-                                <button type="submit" class="btn btn-primary">LOGIN</button>
-                            </div>
-                            <div class="para-2">
-                                <p>Security Tips </p>
-                                <p>Forgot your <a href="#">Password?</a> </p>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="section-login">
-                    <div class="register-btn">
-                        <p>Not registered to <br> internet Banking?</p>
-                        <button type="button" onclick="navigateToLayout()" class="btn btn-primary1">REGISTER NOW</button>
-
-                        <script>
-                            function navigateToLayout() {
-                                window.location.href = "/layout.html"; // Replace "/layout.html" with the URL of your layout page
-                            }
-                        </script>
-                    </div>
-                    <div class="open-btn">
-                        <p>Not a member of Faulu <br> Microfinance Bank?</p>
-                        <button type="submit" class="btn btn-primary2">OPEN ACCOUNT</button>
-                    </div>
-                </div>
-                <div class="section2-login">
-                    <div class="register-paragraph">
-                        <p>We enable you to secure your Bid bond,<br> securely and conveniently in less than 5<br>minutes!</p>
-                    </div>
-                    <div class="register-btn">
-                        <button type="submit" class="btn btn-primary3">APPLY BID BOND</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Notification Popup -->
-        <div class="notification-popup" *ngIf="showNotification">
-            <div class="notification-content">
-                <p>Please fill in all the fields.</p>
-                <button type="button" onclick="hideNotification()">Close</button>
-            </div>
-        </div> 
-
-        <div class="bottom">
-            <footer>
-                <div class="row">
-                    <p>Copyright© Faulu Microfinance Bank Limited 2024</p>
-                </div>
-                <div class="row">
-                    <p>Need help? Talk to us via info&#64;faulukenya.com | Call +254 711 07400 Twitter Facebook Instagram WhatsApp</p>
-                </div>
-                <div class="row">
-                    <p><a href="#">Security | Privacy policy | Terms & Conditions</a>.</p>
-                </div>
-            </footer>
-        </div>
-    </div>
-
-    <script>
-        function validateForm() {
-            var email = document.getElementById("email").value;
-            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                alert("Please enter a valid email address.");
-                return false;
-            }
-            return true;
-        }
-
-        function hideNotification() {
-            var notificationPopup = document.querySelector('.notification-popup');
-            if (notificationPopup) {
-                notificationPopup.style.display = 'none';
-            }
-        }
-    </script>
-</body>
-</html>
+          </div>
+          <div class="section2-login">
+              <div class="register-paragraph">
+                  <p>We enable you to secure your Bid bond,<br> securely and conveniently in less than 5<br>minutes!</p>
+              </div>
+                  <div class="register-btn">
+                      <button type="submit" class="btn btn-primary3">APPLY BID BOND</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <!-- Notification Popup -->
+  <div class="notification-popup" *ngIf="showNotification">
+      <div class="notification-content">
+          <p>Please fill in all the fields.</p>
+          <button type="button" (click)="hideNotification()">Close</button>
+      </div>
+  </div> 
+  
+  <div class="bottom">
+  <footer>
+      <div class="row">
+          <p>Copyright© Faulu Microfinance Bank Limited 2024</p>
+      </div>
+      <div class="row">
+          <p>Need help? Talk to us via info&#64;faulukenya.com | Call +254 711 07400 Twitter Facebook Instagram WhatsApp</p>
+      </div>
+      <div class="row">
+          <p><a href="#">Security | Privacy policy | Terms & Conditions</a>.</p>
+      </div>
+  </footer>
+  </div>
+  </div>
